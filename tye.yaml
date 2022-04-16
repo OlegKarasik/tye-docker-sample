@@ -1,0 +1,9 @@
+# tye application configuration file
+# read all about it at https://github.com/dotnet/tye
+name: tye-docker-sample
+services:
+- name: minapp
+  dockerFile: Dockerfile
+  bindings:
+    - containerPort: 80
+      protocol: http
